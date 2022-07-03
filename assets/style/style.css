@@ -167,14 +167,14 @@ h1, h2, h3, h4, h5, h6, p {
     overflow: hidden;
 }
 .features {
-    background: #DA3229;
+    background: #F9F9FA;;
     padding: 126px 0 164px;
 }
 .features-title {
     font-weight: 700;
     font-size: 36px;
     line-height: 130%;
-    color: #FFFFFF;
+    color: #000;
     max-width: 570px;
 }
 .features-list {
@@ -188,7 +188,7 @@ h1, h2, h3, h4, h5, h6, p {
     font-weight: 700;
     font-size: 24px;
     line-height: 120%;
-    color: #FFFFFF;
+    color: #000;
 }
 .features-list__item img {
     margin-right: 25px;
@@ -1304,5 +1304,133 @@ h1, h2, h3, h4, h5, h6, p {
     }
     .footer-wrapper {
         margin-bottom: 24px;
+    }
+}
+
+.about_product_container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 60px;
+}
+
+.about_product {
+    margin-top: 200px;
+}
+
+.about_title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 130%;
+    margin-bottom: 50px;
+}
+
+.about_text {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 140%;
+}
+
+.about_text_sm {
+    font-weight: 400;
+    font-size: 16px;
+    margin: 0 0 20px 0;
+    line-height: 140%;
+}
+
+.about_text_sm span {
+    font-weight: 700;
+    margin: 0 0 10px 0;
+    display: block;
+    font-size: 22px;
+}
+
+.about_product_wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about_product_right {
+    display: grid;
+    grid-template-columns: 360px 360px;
+    grid-gap: 60px;
+}
+
+.about_product_tarif {
+    padding: 25px 35px;
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    background: #F7F7F7;
+    border-radius: 20px;
+}
+
+.tarif_title {
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.tarif_text {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 50px;
+    line-height: 140%;
+}
+
+.tarif_text_xl {
+    margin-bottom: 15px;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.tarif_text_sm {
+    margin: 0 0 10px 0;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.red {
+    background: #DA3229;
+}
+
+.red p {
+    color: #fff!important;
+}
+
+@media (max-width: 1130px) {
+    .about_product_wrap {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 40px;
+    }
+    .about_title {
+        margin-bottom: 20px;
+    }
+    .about_product {
+        margin-top: 60px;
+    }
+    .about_product_right {
+        grid-gap: 30px;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 990px) {
+    .about_product_right {
+        grid-template-columns: 1fr;
+    }
+    .tarif_text {
+        margin-bottom: 25px;
+    }
+    .about_product_wrap {
+        grid-gap: 20px;
+    }
+    .about_product_tarif {
+        padding: 25px;
+    }
+    .about_product_container {
+        grid-gap: 30px;
     }
 }
