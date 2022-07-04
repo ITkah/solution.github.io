@@ -1434,3 +1434,15 @@ h1, h2, h3, h4, h5, h6, p {
         grid-gap: 30px;
     }
 }
+
+.about_product_tarif {
+    transition: .3s;
+}
+
+.about_product_tarif:hover {
+    background: #DA3229!important;
+}
+
+.about_product_tarif:hover p {
+    color: #fff!important;
+}
